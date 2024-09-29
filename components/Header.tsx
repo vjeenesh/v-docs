@@ -6,7 +6,7 @@ import React from "react";
 const Header = ({ children, className }: HeaderProps) => {
   return (
     <div className={cn("header", className)}>
-      <Link href="/" className="flex items-center justify-center">
+      <Link href="/" className="flex flex-1 items-center justify-start">
         <Image
           src="/assets/icons/logo-icon.svg"
           alt="V Docs logo"
