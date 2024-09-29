@@ -6,21 +6,15 @@ import React from "react";
 const Header = ({ children, className }: HeaderProps) => {
   return (
     <div className={cn("header", className)}>
-      <Link href="/" className="md:flex-1">
-        <Image
-          src="/assets/icons/logo.svg"
-          alt="V Docs logo"
-          height={32}
-          width={120}
-          className="hidden md:block"
-        />
+      <Link href="/" className="flex items-center justify-center">
         <Image
           src="/assets/icons/logo-icon.svg"
           alt="V Docs logo"
           height={32}
           width={32}
-          className="mr-2 md:hidden"
+          className="mr-2"
         />
+        <span className="hidden md:inline font-semibold text-xl">V Docs</span>
       </Link>
       {children}
     </div>
