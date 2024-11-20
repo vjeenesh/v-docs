@@ -34,7 +34,7 @@ const Collaborator = ({
   };
 
   return (
-    <li className="flex items-center justify-between gap-2 py-3">
+    <li key={collaborator.id} className="flex items-center justify-between gap-2 py-3">
       <div className="flex gap-2">
         <Image
           src={collaborator.avatar}
